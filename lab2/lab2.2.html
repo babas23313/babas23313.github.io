@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Таблицы</title>
+
+<style>
+table {
+    width: 200px;
+    border: 1px solid gray;
+    margin: 20px;
+    float: left;
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px solid gray;
+    padding: 30px;
+    text-align: center;
+}
+</style>
+
+</head>
+<body>
+
+<!-- 1-я таблица -->
+<table>
+<caption>1-я таблица</caption>
+<tr>
+    <th rowspan="2">1</th>
+    <td colspan="2">2</td>
+</tr>
+<tr>
+    <td>5</td>
+    <td>6</td>
+</tr>
+</table>
+
+<!-- 2-я таблица -->
+<table>
+<caption>2-я таблица</caption>
+<tr>
+    <th colspan="2">1</th>
+</tr>
+<tr>
+    <td rowspan="2">3</td>
+    <td>4</td>
+</tr>
+<tr>
+    <td>6</td>
+</tr>
+</table>
+
+<!-- 3-я таблица -->
+<table>
+<caption>3-я таблица</caption>
+<tr>
+    <td>1</td>
+    <td rowspan="2">2</td>
+</tr>
+<tr>
+    <td>3</td>
+</tr>
+<tr>
+    <td colspan="2">5</td>
+</tr>
+</table>
+
+<!-- 4-я таблица -->
+<table>
+<caption>4-я таблица</caption>
+<tr>
+    <th colspan="2">1</th>
+</tr>
+<tr>
+    <td>3</td>
+    <td>4</td>
+</tr>
+<tr>
+    <td colspan="2">5</td>
+</tr>
+</table>
+
+</body>
+</html>

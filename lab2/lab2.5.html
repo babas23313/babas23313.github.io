@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма регистрации</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+        form {
+            width: 500px;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+            vertical-align: top;
+        }
+        .block {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Форма регистрации пользователя</h1>
+
+<form method="post">
+
+    <!-- Email -->
+    <div class="block">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Введите e-mail" required>
+    </div>
+
+    <!-- Пароль -->
+    <div class="block">
+        <label for="password">Пароль</label>
+        <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+    </div>
+
+    <!-- Пол -->
+    <div class="block">
+        <label>Пол</label>
+
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">Мужчина</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Женщина</label>
+    </div>
+
+    <!-- Год рождения -->
+    <div class="block">
+        <label for="year">Год рождения</label>
+        <select id="year" name="year">
+            <option>1980</option>
+            <option selected>1981</option>
+            <option>1982</option>
+            <option>1983</option>
+            <option>1984</option>
+        </select>
+    </div>
+
+    <!-- Языки -->
+    <div class="block">
+        <label>Я знаю</label>
+
+        <input type="checkbox" id="ru" checked disabled>
+        <label for="ru">Русский</label>
+
+        <input type="checkbox" id="es">
+        <label for="es">Испанский</label>
+
+        <input type="checkbox" id="de">
+        <label for="de">Немецкий</label>
+
+        <input type="checkbox" id="en">
+        <label for="en">Английский</label>
+
+        <input type="checkbox" id="cn">
+        <label for="cn">Китайский</label>
+    </div>
+
+    <!-- О себе -->
+    <div class="block">
+        <label for="about">Обо мне</label>
+        <textarea id="about" name="about" rows="5" cols="40"
+            placeholder="Напишите коротко о себе"></textarea>
+    </div>
+
+    <!-- Кнопки -->
+    <div class="block">
+        <button type="submit">Готово</button>
+        <button type="reset">Очистить</button>
+    </div>
+
+</form>
+
+</body>
+</html>

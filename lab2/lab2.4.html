@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Встраиваемый контент</title>
+
+<style>
+.tag {
+    color: navy;
+}
+.attribute {
+    color: #e6550d;
+}
+figure {
+    margin: 20px 0;
+}
+figcaption {
+    font-style: italic;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Встраиваемый контент</h1>
+
+<p>
+Элемент <span class="tag">&lt;iframe&gt;</span> используется для внедрения внешнего контента.
+</p>
+
+<h2>Демонстрация добавления встроенного фрейма</h2>
+
+<!-- Видео через iframe -->
+<figure>
+    <iframe 
+        src="https://vkvideo.ru/video_ext.php?oid=-202869502&id=456239024" 
+        width="560" 
+        height="315" 
+        frameborder="0" 
+        allowfullscreen>
+    </iframe>
+    <figcaption>Видео, встроенное с VK</figcaption>
+</figure>
+
+<!-- Карта -->
+<figure>
+    <iframe 
+        src="https://yandex.ru/map-widget/v1/?ll=36.063909%2C52.951255&z=17&oid=1030860442" 
+        width="600" 
+        height="400" 
+        frameborder="0">
+    </iframe>
+    <figcaption>Карта (Яндекс)</figcaption>
+</figure>
+
+<h2>Демонстрация добавления на страницу видео</h2>
+
+<figure>
+    <video controls width="600" poster="poster.jpg">
+        <source src="oreluniver.mp4" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+    </video>
+    <figcaption>Локальное видео</figcaption>
+</figure>
+
+<h2>Демонстрация добавления на страницу аудио</h2>
+
+<figure>
+    <audio controls>
+        <source src="yuriy-gagarin-poehali.mp3" type="audio/mpeg">
+        <source src="yuriy-gagarin-poehali.ogg" type="audio/ogg">
+        Ваш браузер не поддерживает аудио.
+    </audio>
+    <figcaption>Аудио: «Поехали!» Юрий Гагарин</figcaption>
+</figure>
+
+</body>
+</html>
