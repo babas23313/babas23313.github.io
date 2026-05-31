@@ -3,113 +3,94 @@
 <head>
 		<meta charset="UTF-8">
 		<title>Оформление вертикального меню</title>
-		<link rel="stylesheet" href="fontawesome/css/all.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.4/css/all.min.css">
+		<link rel="stylesheet" href=" https://use.fontawesome.com/releases/v6.4.4/css/all.css">
 		<style>
 			html {
-				background: #f0f0f0;
+					background: #f0f0f0;
 			}
 			
 			.menu {
-				width: 200px;
-				background: #fff;
+					width: 220px;
+					background: #fcfcfc;
+					padding: 10px;
 			}
 			
 			.menu ul {
-					
+				list-style-image: url(pic/plus.gif);
+				width: 200px;
+				
 			}
 			
 			.menu li {
-					
+				margin: 0;
+                padding: 0;
+                position: relative;
+				
+				
+                	
 			}
 			
 			.menu li a {
-				color: #6188b0;
+				display: block;
+                align-items: center;
+                text-decoration: underline;
+                color: #369;
+			    padding: 8px 12px;
+				
+            
 			}
 			
 			.menu li a:hover {
-					
+				color: rgb(164, 199, 235);	
 			}
 			
 			.menu li ul {
-					
+				width: 150px;
+				
+
 			}
 			
 			.menu li li {
-					
+				list-style-image: url(pic/minus.gif);
+				
 			}
 	</style>
 </head>
 <body>
 	<nav class="menu">
 		<ul>
-			<li><div class="icon plus"></div><a href="#"> Фильмы</a>
+			<li><a href="#">Фильмы</a>
 				<ul>
-					<li><div class="icon point"></div><a href="#">Экшн</a></li>
-					<li><div class="icon point"></div><a href="#">Мелодрамы</a></li>
-					<li><div class="icon point"></div><a href="#">Сериалы</a></li>
-					<li><div class="icon point"></div><a href="#">Семейные</a></li>
+					<li><a href="#">Экшн</a></li>
+					<li><a href="#">Мелодрамы</a></li>
+					<li><a href="#">Сериалы</a></li>
+					<li><a href="#">Семейные</a></li>
 				</ul>
 			</li>
-			<li><div class="icon plus"></div><a href="#">Музыка</a>
+			<li><a href="#">Музыка</a>
 				<ul>
-					<li><div class="icon point"></div><a href="#">Классика</a></li>
-					<li><div class="icon point"></div><a href="#">Джаз</a></li>
-					<li><div class="icon point"></div><a href="#">Рок</a></li>
-					<li><div class="icon point"></div><a href="#">Грандж</a></li>
+					<li><a href="#">Классика</a></li>
+					<li><a href="#">Джаз</a></li>
+					<li><a href="#">Рок</a></li>
+					<li><a href="#">Грандж</a></li>
 				</ul>
 			</li>
-			<li><div class="icon plus"></div><a href="#">Софт</a>
+			<li><a href="#">Софт</a>
 				<ul>
-					<li><div class="icon point"></div><a href="#">Графика</a></li>
-					<li><div class="icon point"></div><a href="#">3D-моделирование</a></li>
-					<li><div class="icon point"></div><a href="#">Машинопись</a></li>
-					<li><div class="icon point"></div><a href="#">Переводчики</a></li>
+					<li><a href="#">Графика</a></li>
+					<li><a href="#">3D-моделирование</a></li>
+					<li><a href="#">Машинопись</a></li>
+					<li><a href="#">Переводчики</a></li>
 				</ul>
 			</li>
-			<li><div class="icon plus"></div><a href="#">Игры</a>
+			<li><a href="#">Игры</a>
 				<ul>
-					<li><div class="icon point"></div><a href="#">РПГ</a></li>
-					<li><div class="icon point"></div><a href="#">Шутеры</a></li>
-					<li><div class="icon point"></div><a href="#">Пасьянсы</a></li>
+					<li><a href="#">РПГ</a></li>
+					<li><a href="#">Шутеры</a></li>
+					<li><a href="#">Пасьянсы</a></li>
 				</ul>
 			</li>
 		</ul>
 	</nav>
-    <style>
-        .icon::before {
-            content: '';
-            width: 16px;
-            height: 16px;
-            float: left;
-            margin-right: 4px;
-			font-family: "Font Awesome 5 Free";
-        }
-        .icon.point::before {
-			content: '\f192';
-            background-position: -16px -16px;
-        }
-        .icon.minus::before {
-			content: '\f146';
-            background-position: -16px -63px;
-        }
-		.icon.plus::before {
-			content: '\f0fe';
-            background-position: -16px -63px;
-        }
-        ul {
-            list-style: none;
-        }
-		.menu ul li ul {
-			display: none;
-		}
-		.menu ul li:hover ul {
-			display: block;
-		}
-		.menu ul li:hover .icon.plus::before {
-			content: '\f146';
-            background-position: -16px -63px;
-        }
-    </style>
 </body>
 </html>
